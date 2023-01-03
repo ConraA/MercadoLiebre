@@ -113,8 +113,17 @@ article div.main-article {
   flex-wrap: wrap;
   border-top: 1px solid #ebebeb;
   padding: 15px;
+  background-color: #FFF;
 }
 
+article div.contenedor {
+  position:absolute;
+  background-color: #FFF;
+}
+article#article1{
+  position:relative;
+
+}
 .price {
   width: 30%;
   font-size: 18px;
@@ -142,7 +151,8 @@ body main section div.products article:hover .description-div {
   height: unset;
   opacity: 1;
 }
-body main section div.products article:hover {
+
+body main section div.products article:hover div.contenedor{
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 body main section div.products article:hover .truck-icon{

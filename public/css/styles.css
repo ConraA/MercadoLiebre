@@ -140,7 +140,7 @@ h3,
   color: #666;
 }
 .description-div{
-  height: 0;
+  /* height: 0; */
   opacity: 0;
   transition: opacity 200ms ease-in-out, height 300ms ease-in-out;
 }
@@ -180,6 +180,8 @@ main section article img {
 main section article i,
 .discount {
   width: 70%;
+  display: flex;
+  justify-content: center;
   color: #39b54a;
 }
 
@@ -228,6 +230,9 @@ header ul {
   main section .products article {
     width: 45%;
   }
+  .discount {
+    justify-content: end;
+  }
 }
 
 footer {
@@ -246,6 +251,7 @@ footer article i {
 footer h4 {
   color: #666;
 }
+
 @media (min-width: 769px) {
   main section .products article {
     width: 22%;
@@ -290,6 +296,7 @@ footer h4 {
   div.burger-menu {
     display: none;
   }
+  /* FOOTER */
   footer div {
     display: flex;
     width: 100%;
@@ -302,7 +309,8 @@ footer h4 {
   }
   footer div.copyright {
     justify-content: center;
-
+    margin-top: 1%;
+    margin-bottom: 3%;
   }
   /* h4 {
     width: 100%;

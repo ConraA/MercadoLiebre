@@ -165,6 +165,8 @@ main section h3{
   footer {
     text-align: center;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
   }
   
   footer article {
@@ -174,6 +176,9 @@ main section h3{
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+  }
+  footer h4 {
+    color: #666;
   }
   
   @media (min-width: 769px) {
@@ -220,5 +225,19 @@ main section h3{
     div.burger-menu {
       display: none;
     }
-  
+    footer div {
+      display: flex;
+      width: 100%;
+    }
+    footer article {
+      width: 33%;
+    }
+    footer article i:hover{
+      color:#0044aa;
+    }
+    footer div.copyright {
+      justify-content: center;
+      margin-top: 1%;
+      margin-bottom: 3%;
+    }
   }
